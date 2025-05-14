@@ -46,7 +46,9 @@ jobs:
       # 构建 VuePress
       - name: Build VuePress site
         run: yarn docs:build
-
+        
+      - name: List build output
+        run: ls -R docs/.vuepress/
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
