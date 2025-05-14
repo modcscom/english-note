@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # 或者更新为 18、20 以获得长期支持
+          node-version: '20'
 
       - name: Cache dependencies
         uses: actions/cache@v4
@@ -28,6 +28,8 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      # ✅ 关键一步：切换为官方 npm 源，避免访问 registry.nlark.com
       - name: Use npm official registry
         run: yarn config set registry https://registry.npmjs.org
 
