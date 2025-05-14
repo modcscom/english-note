@@ -188,7 +188,7 @@
     "@vuepress/shared" "2.0.0-beta.33"
     "@vuepress/utils" "2.0.0-beta.33"
     autoprefixer "^10.4.2"
-    connect-history-api-fallback "^1.6.0"
+    connect-history-api-fallback "^2.0.0"
     postcss "^8.4.5"
     postcss-csso "^6.0.0"
     rollup "^2.63.0"
@@ -567,9 +567,9 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/download/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
-connect-history-api-fallback@^1.6.0:
+connect-history-api-fallback@^^2.0.0:
   version "1.6.0"
-  resolved "https://registry.npmjs.org/connect-history-api-fallback/download/connect-history-api-fallback-1.6.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
+  resolved "https://registry.npmjs.org/connect-history-api-fallback/download/connect-history-api-fallback-^2.0.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
   integrity sha1-izIIk1kwjRERFdgcrT/Oq4iPl7w=
 
 cross-spawn@^7.0.3:
