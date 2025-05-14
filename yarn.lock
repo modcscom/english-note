@@ -205,7 +205,7 @@
     "@vuepress/utils" "2.0.0-beta.33"
     cac "^6.7.12"
     chokidar "^3.5.2"
-    envinfo "^7.8.1"
+    envinfo "^7.8.4"
     esbuild "^0.13.12"
 
 "@vuepress/client@2.0.0-beta.33":
@@ -632,9 +632,9 @@ entities@~2.1.0:
   resolved "https://registry.npmjs.org/entities/download/entities-2.1.0.tgz?cache=0&sync_timestamp=1628508126700&other_urls=https%3A%2F%2Fregistry.npmjs.org%2Fentities%2Fdownload%2Fentities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
   integrity sha1-mS0xKc999ocLlsV4WMJJoSD4uLU=
 
-envinfo@^7.8.1:
-  version "7.8.1"
-  resolved "https://registry.npmjs.org/envinfo/download/envinfo-7.8.1.tgz#06377e3e5f4d379fea7ac592d5ad8927e0c4d475"
+envinfo@^7.8.4:
+  version "7.8.4"
+  resolved "https://registry.npmjs.org/envinfo/download/envinfo-7.8.4.tgz#06377e3e5f4d379fea7ac592d5ad8927e0c4d475"
   integrity sha1-Bjd+Pl9NN5/qesWS1a2JJ+DE1HU=
 
 esbuild-android-arm64@0.13.15:
