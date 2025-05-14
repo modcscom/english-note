@@ -635,7 +635,8 @@ entities@~2.1.0:
 envinfo@^7.14.0:
   version "7.14.0"
   resolved "https://registry.npmjs.org/envinfo/-/envinfo-7.14.0.tgz"
-  integrity sha1-Bjd+Pl9NN5/qesWS1a2JJ+DE1HU=
+  integrity sha512-CO40UI41xDQzhLB1hWyqUKgFhs250pNcGbyGKe1l/e4FSaI/+YE4IMG76GDt0In67WLPACIITC+sOi08x4wIvg==
+
 
 esbuild-android-arm64@0.13.15:
   version "0.13.15"
