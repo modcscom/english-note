@@ -19,12 +19,15 @@ jobs:
         with:
           node-version: '20'
 
+      # 强制清理 yarn 缓存
       - name: Clear yarn cache
-        run: yarn cache clean
+        run: yarn cache clean --force
 
+      # 设置官方 npm registry
       - name: Set npm registry to official source
         run: yarn config set registry https://registry.npmjs.org
 
+      # 缓存依赖
       - name: Cache dependencies
         uses: actions/cache@v4
         id: yarn-cache
@@ -35,13 +38,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      # 安装依赖
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
+      # 构建 VuePress
       - name: Build VuePress site
         run: yarn docs:build
 
+      # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
